@@ -1,0 +1,138 @@
+@media screen and (max-width: 1199px) {
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__nav-list,
+    .header__form-btn {
+        display: none;
+    }
+
+    /* ----------project-------- */
+    .project-inner {
+        padding: 0;
+
+    }
+
+    .project__completed-title {
+        font-size: 22px;
+        letter-spacing: -1.54px;
+        margin: 36px auto 22px;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .project__completed-text {
+        font-size: 11px;
+        margin-bottom: 0 auto 70px;
+        text-align: center;
+        max-width: 311px;
+    }
+
+
+    .project__arrow,
+    .project__foto-list {
+        display: none;
+    }
+
+    .project__table {
+        margin-top: 36px;
+    }
+
+    .foto-btn-left,
+    .foto-btn-right {
+        display: block;
+    }
+
+    .control {
+        background-color: #131313;
+        ;
+        margin: 0;
+        padding: 0 8px;
+    }
+
+    .control__title {
+        font-size: 22px;
+    }
+
+    .control__video::after {
+        margin: 28px auto 21px;
+    }
+
+    .control__text {
+        color: #FFF;
+        font-size: 11px;
+        line-height: 1.69;
+        margin-bottom: 61px;
+    }
+
+    .control__name {
+        color: #FFF;
+        width: 340px;
+        max-width: 340px;
+        margin-right: 0px;
+        margin-bottom: 90px;
+    }
+
+    .control__tel {
+        color: #FFF;
+        width: 340px;
+        max-width: 340px;
+        margin-right: 0px;
+        margin-bottom: 90px;
+    }
+
+    .control__btn-submit {
+        width: 320px;
+    }
+
+    .submit-checkbox {
+        margin-top: -150px;
+        padding-bottom: 68px;
+    }
+
+    .checkbox-text {
+        color: #FFF;
+    }
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 479px) {
+
+    /* ----------about-------- */
+    .container {
+        padding: 0 10px;
+    }
+
+    .about-inner {
+        padding: 85px 8px 61px 8px;
+        max-width: 339px;
+    }
+
+    .about__title {
+        font-size: 23px;
+    }
+
+    .about__text {
+        font-size: 14px;
+        line-height: 1.35;
+        margin-bottom: 32px;
+    }
+
+    .about__btn-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about__btn {
+        width: 327px;
+    }
+}
+
+@media screen and (max-width: 374px) {}
+
+@media screen and (max-width: 320px) {}

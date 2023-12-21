@@ -67,24 +67,25 @@
         margin-bottom: 61px;
     }
 
-    .control__name {
-        color: #FFF;
+    .control__input {
+        color:rgba(255, 255, 255, 1.0);
         width: 340px;
         max-width: 340px;
         margin-right: 0px;
-        margin-bottom: 90px;
+        margin-bottom: 90px;              
     }
-
-    .control__tel {
-        color: #FFF;
-        width: 340px;
-        max-width: 340px;
-        margin-right: 0px;
-        margin-bottom: 90px;
+    .control__input::placeholder{
+        color:#FFF;
+    }
+    .control__submit-label {
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 13px;
+        line-height: 1.63;
     }
 
     .control__btn-submit {
         width: 320px;
+        margin: 0 auto;
     }
 
     .submit-checkbox {

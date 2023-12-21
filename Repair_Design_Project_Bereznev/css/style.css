@@ -15,6 +15,7 @@ body {
 }
 
 .button {
+    user-select: none;
     color: #FFF;
     text-align: center;
     font-size: 11px;
@@ -282,33 +283,33 @@ body {
     color: #363636;
     font-family: Nunito Sans;
     font-size: 14px;
-    }
-
+}
 
 .submit-block {
     margin-bottom: 35px;
-   
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.control__name {
-    width: 231px;
-    max-width: 231px;
-    border-bottom: 1px solid #363636;    
-    margin-right: 58px;
-    line-height: 3;
-}
-.control__submit-label{
+.input_block {
+    position: relative;
 }
 
-.control__tel {
+.control__input {
     width: 231px;
     max-width: 231px;
-    border-bottom: 1px solid #363636;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.30);
     margin-right: 58px;
     line-height: 3;
+    background-color: transparent;
 }
-.test{
-    display: inline-block;
+
+.control__submit-label {
+    position: absolute;
+    top: -15px;
+    color: rgba(54, 54, 54, 0.50);
+    font-size: 13px;
+    line-height: 1.63;
 }
 
 .control__btn-submit {
@@ -357,7 +358,7 @@ body {
 .repair {
     color: #131313;
     margin-bottom: 300px;
-
+    user-select: none;
 }
 
 .repair__title {

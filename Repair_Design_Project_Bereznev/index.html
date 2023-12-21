@@ -151,7 +151,7 @@
                 <img class="cam-svg" src="./images/main/project/Group 45.svg" alt="камера">
                 <div class="control__video">
                     <a href="#!" class="control__link">
-                        <img src="./images/main/project/control.jpg" alt="видео с онлайн видеокамеры">
+                        <img src="./images/main/project/control.jpg" alt="онлайн видео c камеры">
                     </a>
                 </div>
                 <p class="control__text">At each facility, a camera is installed that broadcasts the progress of work on
@@ -160,10 +160,15 @@
                     you will receive a link to the broadcast.</p>
                 <form class="control__submit" action="#" name="clientTelForm" method="get" autocomplete enctype="text/plain">
                     <div class="submit-block">
-                        <!-- <label class="control__submit-label" for="clientName">Name</label> -->
-                        <input class="control__name" type="text" name="clientName" id="clientName" required placeholder="What is your name:">
-                        <!-- <label class="control__submit-label" for="clientTel">Phone</label> -->
-                        <input class="control__tel" type="tel" name="clientTel" id="clientTel" required placeholder="Your phone number:">
+                        <div class="input_block">
+                            <label class="control__submit-label" for="clientName">Name</label>
+                            <input class="control__input" type="text" name="clientName" id="clientName" minlength="2" required placeholder="What is your name:">
+                        </div>
+                        <div class="input_block">
+                            <label class="control__submit-label" for="clientTel">Phone</label>
+                            <input class="control__input" type="tel" name="clientTel" id="clientTel" pattern="[0-9]{10}" required placeholder="Your phone number:">
+                        </div>   
+                       
                         <button class="control__btn-submit button" type="submit">Submit</button>
                     </div>
                     <div class="submit-checkbox">

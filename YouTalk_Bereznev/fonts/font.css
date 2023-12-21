@@ -1,0 +1,9 @@
+@font-face {
+    font-family: helvetica;
+    src: local(Helvetica) url(./Helvetica.ttf) format(truetype);
+}
+@font-face {
+    font-family: helvetica-bold;
+    src: url(./Helvetica-Bold.ttf) format(truetype);
+
+}

@@ -291,7 +291,6 @@ body {
 }
 
 .control__name {
-    /* position: relative; */
     width: 231px;
     max-width: 231px;
     border-bottom: 1px solid #363636;    
@@ -299,8 +298,6 @@ body {
     line-height: 3;
 }
 .control__submit-label{
-    /* position: absolute; */
-
 }
 
 .control__tel {

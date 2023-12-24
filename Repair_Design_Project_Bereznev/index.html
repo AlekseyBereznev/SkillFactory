@@ -158,17 +158,20 @@
                     the clock. At any time, you can go to our website and monitor the progress of work in your
                     apartment. You can watch the live broadcast from one of our facilities! Leave a request below and
                     you will receive a link to the broadcast.</p>
-                <form class="control__submit" action="#" name="clientTelForm" method="get" autocomplete enctype="text/plain">
+                <form class="control__submit" action="#" name="clientTelForm" method="get" autocomplete
+                    enctype="text/plain">
                     <div class="submit-block">
-                        <div class="input_block">
+                        <div class="input__block">
                             <label class="control__submit-label" for="clientName">Name</label>
-                            <input class="control__input" type="text" name="clientName" id="clientName" minlength="2" required placeholder="What is your name:">
+                            <input class="control__input" type="text" name="clientName" id="clientName" minlength="2"
+                                required placeholder="What is your name:">
                         </div>
-                        <div class="input_block">
+                        <div class="input__block">
                             <label class="control__submit-label" for="clientTel">Phone</label>
-                            <input class="control__input" type="tel" name="clientTel" id="clientTel" pattern="[0-9]{10}" required placeholder="Your phone number:">
-                        </div>   
-                       
+                            <input class="control__input" type="tel" name="clientTel" id="clientTel" pattern="[0-9]{10}"
+                                required placeholder="Your phone number:">
+                        </div>
+
                         <button class="control__btn-submit button" type="submit">Submit</button>
                     </div>
                     <div class="submit-checkbox">
@@ -233,6 +236,64 @@
                             </ul>
                         </div>
                         <p class="repair__card-cost">from 4000 rub / m2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="four-step">
+            <div class="container">
+                <div class="four-step__inner">
+                    <div class="four-step__list">
+                        <div class="four-step__number">
+                            <span class="four-step__item">01</span>
+                        </div>
+                        <span class="four-step__text">Our specialist will arrive for measurements per day
+                            contact, or appoint a date convenient for you</span>
+                        <div class="four-step__number">
+                            <span class="four-step__item">02</span>
+                        </div>
+                        <span class="four-step__text">Free metering</span>
+                        <div class="four-step__number">
+                            <span class="four-step__item">03</span>
+                        </div>
+                        <span class="four-step__text">Free consultation</span>
+                        <div class="four-step__number">
+                            <span class="four-step__item">04</span>
+                        </div>
+                        <span class="four-step__text">Get a cost estimate and
+                            the timing of your future repairs</span>
+                    </div>
+                    <div class="four-step__call">
+                        <form action="#!" class="call-form">
+                            <h3 class="call-form-title">Leave a request for free
+                                departure of the measurer</h3>
+                                <div class="call-form__block">
+                                    <label class="call-form__submit-label" for="clientName">Name</label>
+                                    <input class="call-form__input" type="text" name="clientName" id="clientName"
+                                        minlength="2" required placeholder="What is your name:">
+                                </div>
+                                <div class="call-form__block">
+                                    <label class="call-form__submit-label" for="clientTel">Phone</label>
+                                    <input class="call-form__input" type="tel" name="clientTel" id="clientTel"
+                                        pattern="[0-9]{10}" required placeholder="Your phone number:">
+                                </div>
+                                <div class="call-form__block">
+                                    <label class="call-form__submit-label" for="clientMail">Email</label>
+                                    <input class="call-form__input" type="email" name="clientMail" id="clientTel" required
+                                        placeholder="Your email">
+                                </div>
+                                <div class="call-form__checkbox">
+                                    <label class="call-form__label">
+                                        <input type="checkbox" class="call-form__checkbox-input">
+                                        <span class="fake"></span>
+                                        <span class="call-form__checkbox-text">I agree to the processing of personal data.</span>
+                                    </label>
+                                </div>
+                                <button class="call-form__btn button" type="submit">Call the measurer</button>
+                        </form>
+                        <div class="four-step__pig">
+                            <p class="four-step__pig-text">Help save 10 - 20% of the cost of materials</p>
+                        </div>
                     </div>
                 </div>
             </div>

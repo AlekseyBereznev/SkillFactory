@@ -118,7 +118,7 @@ body {
 
 /* ----------//about-------- */
 
-/* ----------project-------- */
+/* -------section-project-------- */
 .project {
     background-color: #131313;
     font-family: Yeseva One;
@@ -131,7 +131,7 @@ body {
     column-gap: 50px;
 }
 
-/* ----------project__completed-------- */
+/* -----section-project__completed-------- */
 .project__completed {
     max-width: 442px;
     position: relative;
@@ -179,7 +179,7 @@ body {
     margin: 9px 0 30px 0;
 }
 
-/* ----------project__foto-------- */
+/* ----------section-project__foto-------- */
 .project__foto {
     max-width: 680px;
 }
@@ -234,9 +234,9 @@ body {
     bottom: 0;
 }
 
-/* ------//project-------- */
+/* ------//section-project-------- */
 
-/* ------control-------- */
+/* ------section-control-------- */
 .control {
     margin-top: -330px;
     padding: 0 15px;
@@ -291,7 +291,7 @@ body {
     flex-wrap: wrap;
 }
 
-.input_block {
+.input__block {
     position: relative;
 }
 
@@ -328,6 +328,7 @@ body {
 }
 
 .fake {
+    position: relative;
     display: inline-block;
     width: 18px;
     height: 20px;
@@ -336,9 +337,12 @@ body {
 }
 
 .fake::before {
+    position: absolute;
     content: "\2714";
     opacity: 0;
     transition: .2s;
+    top: 0;
+    left: 3px;
 }
 
 .checkbox-text {
@@ -352,9 +356,9 @@ body {
     opacity: 1;
 }
 
-/* ------//control-------- */
+/* ------//section-control-------- */
 
-/* ------repair-------- */
+/* ------section-repair-------- */
 .repair {
     color: #131313;
     margin-bottom: 300px;
@@ -395,7 +399,7 @@ body {
     margin-top: -130px;
     margin-left: 34px;
     background-color: #FFF;
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
 }
 
 .repair__card-title {
@@ -427,4 +431,141 @@ body {
     margin-top: -32px;
     margin-left: 31px;
     margin-bottom: 56px;
+}
+
+/* ------//section-repair-------- */
+/* ------section-four-step--------- */
+.four-step__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 55px 146px;
+    background: url(../images/main/project/call_form_bg.png) no-repeat;
+    background-position: 0 -90px;
+}
+
+.four-step__list {
+    color: #363636;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: normal;
+    display: grid;
+    grid-template-columns: 60px 316px;
+    column-gap: 18px;
+    grid-template-rows: repeat(4, 60px);
+    row-gap: 100px;
+    align-items: center;
+}
+
+.four-step__number {
+    box-sizing: content-box;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    border: 8px solid #FFF;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.15);
+    align-items: center;
+    justify-content: center;
+}
+
+.four-step__item {
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 1.38;
+}
+
+.four-step__text {
+    color: #363636;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.four-step__call {
+    max-width: 510px;
+    max-height: 510px;
+    background-color: #131313;
+    color: #FFF;
+    padding: 29px 48px;
+}
+
+.call-form-title {
+    max-width: 268px;
+    margin: 0 auto 39px;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 1.43;
+}
+
+.call-form__block {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.call-form__submit-label {
+    position: absolute;
+    top: -18px;
+    color: rgba(255, 255, 255, 0.50);
+    ;
+    font-size: 13px;
+    line-height: 1.63;
+}
+
+.call-form__input {
+    width: 408px;
+    max-width: 408px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 2;
+}
+
+.call-form__input::placeholder {
+    color: #FFF;
+}
+
+.call-form__btn {
+    margin-left: 208px;
+    margin-top: 40px;
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 2.04;
+}
+
+.call-form__checkbox-input {
+    display: none;
+}
+
+.call-form__checkbox-text {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 1.63;
+}
+
+.call-form__checkbox-input:checked+.fake::before {
+    opacity: 1;
+}
+
+.four-step__pig {
+    margin-top: 50px;
+    background: url(../images/main/project/pig.png) no-repeat;
+    background-position: 32px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+}
+
+.four-step__pig-text {
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 1.43;
+    margin-left: 140px;
+    max-width: 250px;
 }

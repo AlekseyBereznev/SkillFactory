@@ -577,7 +577,7 @@ body {
 /* ------section-style--------- */
 .style {
     background: url(../images/main/project/style_bg.png) no-repeat center/cover;
-    max-height: 864px;
+    max-height: 874px;
 }
 
 .style__inner {
@@ -593,6 +593,10 @@ body {
     text-transform: uppercase;
     margin: 138px 0 47px;
     max-width: 285px;
+}
+
+.style__list-item {
+    margin-bottom: 10px;
 }
 
 .style__list-link {
@@ -630,3 +634,114 @@ body {
 }
 
 /* ------//section-style--------- */
+
+/* ------section-clients--------- */
+.clients {
+    padding-top: 105px;
+    padding-bottom: 350px;
+    background: url(../images/main/project/clients_bg.jpg) repeat-x;
+    background-position-y: bottom;
+    text-align: center;
+}
+
+.clients__title {
+    color: #181818;
+    font-family: Yeseva One;
+    font-size: 20px;
+    line-height: 1.38;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.clients-svg {
+    background: url(../images/main/project/client_svg.svg) no-repeat center/cover;
+    width: 114px;
+    height: 28px;
+    margin: 0 auto 24px;
+}
+
+.clients__descr {
+    color: #363636;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    line-height: 1.63;
+    max-width: 370px;
+    margin: 0 auto 40px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients__card {
+    opacity: 0.999;
+    z-index: 2;
+    display: block;
+    max-width: 376px;
+    max-height: 428px;
+    padding: 24px 32px 90px 20px;
+    background-color: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.clients__img {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #131313;
+}
+
+.clients__title {
+    display: inline-block;
+    color: #181818;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 1.27;
+    max-width: 210px;
+    padding-left: 23px;
+    padding-top: 17px;
+}
+
+.clients__text {
+    color: #959595;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 324px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.client__block {
+    display: flex;
+    gap: 1px;
+    max-width: 293px;
+    opacity: 0.999;
+    z-index: 4;
+    margin-left: -20px;
+    box-shadow: 5px 5px 20px 0px rgba(227, 184, 115, 0.50);
+}
+
+.clients__area {
+    display: inline-block;
+    width: 135px;
+    padding: 16px 20px 16px 55px;
+    background: url(../images/main/project/clients__icon-area.svg) no-repeat;
+    background-position: 10px;
+    background-color: #E3B873;
+}
+
+.clients__date {
+    display: inline-block;
+    width: 158px;
+    padding: 16px 20px 16px 55px;
+    background: url(../images/main/project/clients__icon-date.svg) no-repeat;
+    background-position: 10px;
+    background-color: #E3B873;
+}
+
+/* ------//section-clients--------- */

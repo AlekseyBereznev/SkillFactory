@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -98,7 +98,7 @@
                         <div class="project__foto-block">
                             <img class="project__foto-img" src="./images/main/project/image1.jpg"
                                 alt="фотография отремонтированной комнаты">
-                            <form id="submit__application">
+                            <form id="submitApplicationLeft">
                                 <button class="foto-btn-left" aria-label="На лево">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                         fill="none">
@@ -110,7 +110,7 @@
                                     </svg>
                                 </button>
                             </form>
-                            <form id="submit__application">
+                            <form id="submitApplicationRight">
                                 <button class="foto-btn-right" aria-label="На право">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                         fill="none">
@@ -148,7 +148,7 @@
         <section class="control">
             <div class="control__container">
                 <h3 class="control__title">online control</h3>
-                <img class="cam-svg" src="./images/main/project/Group 45.svg" alt="камера">
+                <img class="cam-svg" src="./images/main/project/Group_45.svg" alt="камера">
                 <div class="control__video">
                     <a href="#!" class="control__link">
                         <img src="./images/main/project/control.jpg" alt="онлайн видео c камеры">
@@ -158,12 +158,12 @@
                     the clock. At any time, you can go to our website and monitor the progress of work in your
                     apartment. You can watch the live broadcast from one of our facilities! Leave a request below and
                     you will receive a link to the broadcast.</p>
-                <form class="control__submit" action="#" name="clientTelForm" method="get" autocomplete
+                <form class="control__submit" action="#" name="clientTelForm" method="get" autocomplete="on"
                     enctype="text/plain">
                     <div class="submit-block">
                         <div class="input__block">
                             <label class="control__submit-label" for="clientName">Name</label>
-                            <input class="control__input" type="text" name="clientName" id="clientName" minlength="2"
+                            <input class="control__input" type="text" name="clientName" id="clientName" minlength="2" autocomplete="name"
                                 required placeholder="What is your name:">
                         </div>
                         <div class="input__block">
@@ -187,7 +187,7 @@
         <section class="repair">
             <div class="container">
                 <h3 class="repair__title">TYPES OF REPAIR</h3>
-                <img class="repair__logo" src="./images/main/project/Group 2.9.svg" alt="">
+                <img class="repair__logo" src="./images/main/project/Group_29.svg" alt="">
                 <div class="repair__list">
                     <div class="repair__card">
                         <img class="repair__card-img" src="./images/main/project/repair1.jpg" alt="">
@@ -269,17 +269,17 @@
                                 departure of the measurer</h3>
                             <div class="call-form__block">
                                 <label class="call-form__submit-label" for="clientName">Name</label>
-                                <input class="call-form__input" type="text" name="clientName" id="clientName"
+                                <input class="call-form__input" type="text" name="clientName"
                                     minlength="2" required placeholder="What is your name:">
                             </div>
                             <div class="call-form__block">
                                 <label class="call-form__submit-label" for="clientTel">Phone</label>
-                                <input class="call-form__input" type="tel" name="clientTel" id="clientTel"
+                                <input class="call-form__input" type="tel" name="clientTel" 
                                     pattern="[0-9]{10}" required placeholder="Your phone number:">
                             </div>
                             <div class="call-form__block">
                                 <label class="call-form__submit-label" for="clientMail">Email</label>
-                                <input class="call-form__input" type="email" name="clientMail" id="clientTel" required
+                                <input class="call-form__input" type="email" name="clientMail" id="clientMail"
                                     placeholder="Your email">
                             </div>
                             <div class="call-form__checkbox">

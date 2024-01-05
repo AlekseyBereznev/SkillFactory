@@ -102,6 +102,13 @@
    .questions-form__input {
       min-width: 340px;
    }
+
+   .four-step,
+   .style,
+   .clients,
+   .footer {
+      display: none;
+   }
 }
 
 @media screen and (max-width: 479px) {
@@ -154,13 +161,6 @@
       margin-left: 0px;
    }
 
-   .four-step,
-   .style,
-   .clients,
-   .footer {
-      display: none;
-   }
-
    .block370xp {
       display: block;
    }
@@ -179,8 +179,8 @@
 
    .contacts-bg,
    .contacts-bg-black {
-      margin-top: -1090px;
-      height: 1150px;
+      margin-top: -960px;
+      height: 1050px;
       background-color: #131313;
    }
 

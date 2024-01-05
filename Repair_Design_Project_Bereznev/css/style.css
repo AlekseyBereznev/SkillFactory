@@ -34,7 +34,8 @@ body {
 }
 
 /* -----------header---------- */
-.header, .footer {
+.header,
+.footer {
    background-color: #131313;
    font-size: 11px;
    font-weight: 400;
@@ -46,31 +47,37 @@ body {
    text-transform: uppercase;
 }
 
-.header__inner, .footer__inner {
+.header__inner,
+.footer__inner {
    display: grid;
    grid-template-columns: 21.65% auto 11.5% 162px;
    align-items: center;
 }
 
-.header__nav-list, .footer__nav-list {
+.header__nav-list,
+.footer__nav-list {
    display: flex;
    gap: 47px;
 }
 
-.header__nav-item, .footer__nav-item {
+.header__nav-item,
+.footer__nav-item {
    color: #FFF;
 }
 
-.header__nav-item:hover, .footer__nav-item:hover {
+.header__nav-item:hover,
+.footer__nav-item:hover {
    color: #E3B873;
 }
 
-.header__inner>.header__tel, .footer__inner>.footer__tel {
+.header__inner>.header__tel,
+.footer__inner>.footer__tel {
    color: #E3B873;
    text-decoration-line: underline;
 }
 
-.header__btn, .footer__btn {
+.header__btn,
+.footer__btn {
    padding: 13px 33px;
 }
 
@@ -215,17 +222,17 @@ body {
    min-height: 241px;
 }
 
-.foto-btn-left {
+.foto-btn-left{
    display: none;
    position: absolute;
-   bottom: 104px;
+   bottom: 95px;
    left: 14px;
 }
 
 .foto-btn-right {
    display: none;
    position: absolute;
-   bottom: 104px;
+   bottom: 95px;
    right: 14px;
 }
 
@@ -396,7 +403,7 @@ body {
    z-index: 2;
    display: block;
    max-width: 330px;
-   padding: 59px 32px 45px;
+   padding: 25px 32px 25px;
    margin-top: -130px;
    margin-left: 34px;
    background-color: #FFF;
@@ -672,6 +679,8 @@ body {
 .clients__list {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
+   row-gap: 58px;
 }
 
 .clients__card {
@@ -747,6 +756,10 @@ body {
 /* ------//section-clients--------- */
 
 /* ------/section-questions--------- */
+.block370xp {
+   display: none;
+}
+
 .contacts-bg {
    background: url(../images/main/project/contacts_bg.jpg) no-repeat center/cover;
    height: 960px;
@@ -763,16 +776,14 @@ body {
    max-width: 885px;
    opacity: 0.999;
    z-index: 5;
+   padding: 0 12px 0 12px;
 }
 
 .questions-form {
    background-color: #131313;
    max-width: 883px;
    margin: 0 auto;
-   padding: 35px 181px;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+   padding: 35px 5px 35px 5px;
    margin-bottom: 52px;
 }
 
@@ -787,9 +798,10 @@ body {
 }
 
 .questions-form__inner {
+   max-width: 520px;
    display: flex;
    flex-wrap: wrap;
-
+   margin: 0 auto;
    column-gap: 58px;
 }
 
@@ -808,15 +820,13 @@ body {
 }
 
 .questions-form__input {
-   width: 231px;
-   max-width: 231px;
+   min-width: 231px;
    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
    line-height: 2;
 }
 
 .questions-form__question {
-   width: 518px;
-   max-width: 518px;
+   min-width: 518px;
    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
    line-height: 2;
 }
@@ -829,6 +839,11 @@ body {
    line-height: 1.63;
 }
 
+.questions-form__checkbox {
+   margin: 0 auto;
+   max-width: 330px;
+}
+
 .questions-form__checkbox-input {
    display: none;
 }
@@ -839,8 +854,8 @@ body {
    font-family: Nunito Sans;
    font-size: 14px;
    line-height: 1.63;
-   max-width: 300px;
-   width: 300px;
+   max-width: 290px;
+   width: 290px;
 }
 
 .questions-form__checkbox-input:checked+.fake::before {
@@ -848,9 +863,10 @@ body {
 }
 
 .questions-form__btn {
-   margin-top: 50px;
-   width: 200px;
-   height: 51px;
+   display: block;
+   margin: 50px auto 0;
+   min-width: 200px;
+   min-height: 51px;
    font-size: 13px;
    line-height: 2.04;
 }
@@ -863,12 +879,14 @@ body {
    line-height: 1.38;
    text-transform: uppercase;
    text-align: center;
-   margin: 0 auto;
-   margin-bottom: 26px;
+   margin: 0 auto 26px;
+
 }
-.contacts__link{
+
+.contacts__link {
    margin: 26px auto 44px;
    width: 71px;
 }
+
 
 /* ------//section-questions--------- */

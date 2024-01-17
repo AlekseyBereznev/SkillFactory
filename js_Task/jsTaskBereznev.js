@@ -49,3 +49,16 @@ switch (typeof varX) {
 }
 console.log(varX);
 console.log(typeof varX);
+
+
+  // Задание 3 Дана строка. Необходимо вывести в консоль перевёрнутый вариант.
+        //  Например, "Hello" -> "olleH".
+        const str = 'Привет';
+        let backstr = '';
+        for (let i = 0; i < str.length+1; i += 1) {
+           backstr = backstr + (str.slice(str.length - i, str.length - i +1));
+        
+        }
+        console.log(backstr);
+
+        

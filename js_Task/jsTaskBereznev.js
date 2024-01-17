@@ -51,14 +51,26 @@ console.log(varX);
 console.log(typeof varX);
 
 
-  // Задание 3 Дана строка. Необходимо вывести в консоль перевёрнутый вариант.
-        //  Например, "Hello" -> "olleH".
-        const str = 'Привет';
-        let backstr = '';
-        for (let i = 0; i < str.length+1; i += 1) {
-           backstr = backstr + (str.slice(str.length - i, str.length - i +1));
-        
-        }
-        console.log(backstr);
+// Задание 3 Дана строка. Необходимо вывести в консоль перевёрнутый вариант.
+//  Например, "Hello" -> "olleH".
+const str = 'Привет';
+let backstr = '';
+for (let i = 0; i < str.length + 1; i += 1) {
+   backstr = backstr + (str.slice(str.length - i, str.length - i + 1));
 
-        
+}
+console.log(backstr);
+
+// Задание 4 Записать в переменную случайное целое число в диапазоне [0; 100].
+// Используйте объект Math.
+let rndNumber = Math.round(Math.random() * 100);
+console.log(rndNumber);
+
+// Задание 5 Дан произвольный массив. Необходимо вывести количество элементов массива,
+//  затем перебрать его и вывести в консоль каждый элемент массива.
+const array = ['нулевой', 'первый', 'второй', 'третий', 'четвёртый', 'пятый'];
+
+console.log(array.length);
+for (i = 0; i < array.length; i += 1) {
+   console.log(array[i]);
+}

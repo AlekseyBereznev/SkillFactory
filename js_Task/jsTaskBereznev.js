@@ -55,9 +55,8 @@ console.log(typeof varX);
 //  Например, "Hello" -> "olleH".
 const str = 'Привет';
 let backstr = '';
-for (let i = 0; i < str.length + 1; i += 1) {
+for (let i = 0; i <= str.length; i += 1) {
    backstr = backstr + (str.slice(str.length - i, str.length - i + 1));
-
 }
 console.log(backstr);
 
@@ -74,3 +73,31 @@ console.log(array.length);
 for (i = 0; i < array.length; i += 1) {
    console.log(array[i]);
 }
+
+//   Задание 7 
+//   Дан массив. Нужно вывести в консоль количество чётных и нечётных элементов в массиве.
+//   Если в массиве есть нулевой элемент, то он учитывается и выводится отдельно.
+//   При выполнении задания необходимо учесть, что массив может содержать не только числа,
+//   но и, например, знаки, null и так далее.
+const array = [2, 2, 1, 1, 1, 0, 0, 0, 0, 0, 'f', 'f', "dfg", '-', null];
+let even = 0;
+let notEven = 0;
+let zero = 0;
+let notNumber = 0;
+
+for (let num of array) {
+   num = +num;
+   if (Number.isNaN(num)) {
+      notNumber++
+   } else if (num === 0) {
+      zero++
+   } else if (num % 2 === 0) {
+      even++
+   } else if (num % 2 !== 0) {
+      notEven++
+   }
+}
+console.log(`${even} элемента массива четные числа`);
+console.log(`${notEven} элемента массива нечетные числа`);
+console.log(`${zero} элемента массива равны 0`);
+console.log(`${notNumber} элемента массива не числа`);

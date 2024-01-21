@@ -79,13 +79,13 @@ for (i = 0; i < array.length; i += 1) {
 //   Если в массиве есть нулевой элемент, то он учитывается и выводится отдельно.
 //   При выполнении задания необходимо учесть, что массив может содержать не только числа,
 //   но и, например, знаки, null и так далее.
-const array = [2, 2, 1, 1, 1, 0, 0, 0, 0, 0, 'f', 'f', "dfg", '-', null];
+const array1 = [2, 2, 1, 1, 1, 0, 0, 0, 0, 0, 'f', 'f', "dfg", '-', null];
 let even = 0;
 let notEven = 0;
 let zero = 0;
 let notNumber = 0;
 
-for (let num of array) {
+for (let num of array1) {
    num = +num;
    if (Number.isNaN(num)) {
       notNumber++
@@ -101,3 +101,23 @@ console.log(`${even} элемента массива четные числа`);
 console.log(`${notEven} элемента массива нечетные числа`);
 console.log(`${zero} элемента массива равны 0`);
 console.log(`${notNumber} элемента массива не числа`);
+
+
+// Задание 6
+// Дан массив. Проверить, одинаковые ли элементы в массиве и вывести
+// результат true или false в консоль. Речь идёт не о двух рядом стоящих
+// одинаковых элементах, а обо всех. Проверить, все ли элементы в массиве одинаковые.
+let array = ['ноль', 'один', 'два', 'три', 'три'];
+let elementArray;
+for (let i = 0; i <= array.length; i += 1) {
+   elementArray = array.pop();
+   console.log('выбранный элемент', elementArray);
+   console.log('массив', array);
+   for (const num of array) {
+      if (elementArray === num) {
+         console.log('сравнение ', elementArray, 'и', num, 'true');
+      } else {
+         console.log('сравнение ', elementArray, 'и', num, 'false');
+      }
+   }
+};
